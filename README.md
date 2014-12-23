@@ -12,7 +12,7 @@ How many pages are there...
 ... if I have 127 articles and 15 summaries per page?
 
 ```javascript
-Math.ceil(127 / 15);
+Math.ceil(127 / 15);                                // 9
 ```
 
 ```javascript
@@ -25,11 +25,11 @@ Which page an item is on...
 ... for item 15 where there are 6 items per page
 
 ```javascript
-Math.floor(15 / 6);
+Math.ceil(15 / 6);
 ```
 
 ```javascript
-var pageNo = pagitator.getItemPage(127 / 15);
+var pageNo = pagitator.getItemPage(15 / 6);
 ```
 
 Which pages are selectable...

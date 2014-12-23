@@ -8,7 +8,7 @@ function getNumPages(perPage, numItems) {
 }
 
 function getItemPage(itemNo, itemsPerPage) {
-  return Math.floor(itemNo / itemsPerPage);
+  return Math.max(1, Math.ceil(itemNo / itemsPerPage));
 }
 
 /*
